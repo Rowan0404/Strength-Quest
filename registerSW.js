@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/strength-quest/sw.js', { scope: '/strength-quest/' })})}
