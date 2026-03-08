@@ -1,0 +1,586 @@
+{
+  "name": "Core Firm + Glute Shape (12 Weeks)",
+  "goal": "Improve abdominal firmness and appearance, lean total body fat, build glute hypertrophy while protecting diastasis recti and SI joint.",
+  "strength_daysOfWeek": [
+    "SU",
+    "TH"
+  ],
+  "global_rules": [
+    "Exhale gently before exertion",
+    "Ribs stacked over pelvis",
+    "No abdominal pushing, doming, or coning",
+    "Stop a set if form degrades \u2014 not when muscles burn",
+    "Slow, controlled reps > speed"
+  ],
+  "templates": {
+    "GLUTE_ACCESSORY": {
+      "title": "Optional Glute Accessory (15\u201320 min)",
+      "type": "accessory",
+      "warmup": [],
+      "cooldown": [],
+      "exercises": [
+        {
+          "name": "Frog Pumps",
+          "prescription": "2\u00d725",
+          "cues": [
+            "Posterior pelvic tilt. Constant tension. Stop if low back takes over."
+          ],
+          "track": "weight"
+        },
+        {
+          "name": "Banded Lateral Walks",
+          "prescription": "2\u00d720 steps",
+          "cues": [
+            "Soft knees. Stay low. Don\u2019t sway\u2014keep tension."
+          ],
+          "track": "weight"
+        },
+        {
+          "name": "Hip Thrust Burnout",
+          "prescription": "1\u00d7AMRAP (perfect form)",
+          "cues": [
+            "Short range if needed. No rib flare. Stop before form breaks."
+          ],
+          "track": "weight"
+        }
+      ]
+    },
+    "PILATES_UPPER": {
+      "title": "Pilates Upper Body (20 min)",
+      "type": "pilates",
+      "warmup": [
+        "Arm circles",
+        "Cat-cow x 5",
+        "Scapular rolls"
+      ],
+      "cooldown": [
+        "Chest opener stretch",
+        "Child's pose",
+        "Shoulder stretch"
+      ],
+      "exercises": [
+        {
+          "name": "Band Pull-Aparts",
+          "prescription": "2\u00d715",
+          "cues": [
+            "Shoulders down",
+            "Slow squeeze between shoulder blades"
+          ],
+          "track": "reps"
+        },
+        {
+          "name": "Pilates Triceps Kickbacks",
+          "prescription": "3\u00d712\u201315",
+          "cues": [
+            "Light weights",
+            "Long neck",
+            "Control the return"
+          ],
+          "track": "weight"
+        },
+        {
+          "name": "Front Arm Raises",
+          "prescription": "2\u00d712",
+          "cues": [
+            "Light weights",
+            "No shrugging",
+            "Slow lower"
+          ],
+          "track": "weight"
+        },
+        {
+          "name": "Lateral Raises",
+          "prescription": "2\u00d712",
+          "cues": [
+            "Soft elbows",
+            "Lift to shoulder height",
+            "Light weights"
+          ],
+          "track": "weight"
+        },
+        {
+          "name": "Plank Shoulder Taps",
+          "prescription": "2\u00d720 taps",
+          "cues": [
+            "Ribs stacked",
+            "Minimal hip sway"
+          ],
+          "track": "reps"
+        },
+        {
+          "name": "Wall Angels",
+          "prescription": "2\u00d710",
+          "cues": [
+            "Slow reps",
+            "Ribs down",
+            "Keep wrists near wall"
+          ],
+          "track": "reps"
+        }
+      ]
+    }
+  },
+  "phases": [
+    {
+      "weeks": [
+        1,
+        4
+      ],
+      "title": "Firm First",
+      "progression_rules": [
+        "Stay 2\u20133 reps in reserve",
+        "Add load only if: no doming, no SI irritation, last reps still controlled"
+      ],
+      "workouts": {
+        "A": {
+          "title": "Strength A (Glute Bias)",
+          "type": "strength",
+          "warmup": [
+            "2\u20133 min easy cardio",
+            "Glute activation (banded bridges or clamshells)",
+            "Hip hinge patterning"
+          ],
+          "cooldown": [
+            "Glute stretch",
+            "Hip flexor stretch",
+            "Slow nasal breathing (5 breaths)"
+          ],
+          "exercises": [
+            {
+              "name": "Dumbbell or Barbell Hip Thrust",
+              "prescription": "3\u00d710\u201312",
+              "cues": [
+                "Chin tucked, ribs down",
+                "Pause 1 sec at top",
+                "Squeeze glutes, not low back",
+                "Pause 2 sec at top"
+              ],
+              "track": "weight"
+            },
+            {
+              "name": "Romanian Deadlift (DB or Barbell)",
+              "prescription": "3\u00d78\u201310",
+              "cues": [
+                "Soft knees",
+                "Push hips back",
+                "Keep bar close",
+                "Stop before spine flexes"
+              ],
+              "track": "weight"
+            },
+            {
+              "name": "Reverse Lunge (glute bias)",
+              "prescription": "3\u00d78/side",
+              "cues": [
+                "Slight forward lean; ribs stacked",
+                "Front heel heavy; drive through glute",
+                "Control the step-back; stop before SI irritation"
+              ],
+              "track": "weight"
+            },
+            {
+              "name": "Banded Glute Bridge Pulses",
+              "prescription": "2\u00d720\u201325",
+              "cues": [
+                "Small pulse at the top",
+                "Keep ribs down and pelvis tucked",
+                "Constant glute tension"
+              ],
+              "track": "reps"
+            }
+          ]
+        },
+        "B": {
+          "title": "Strength B (Posterior + Upper)",
+          "type": "strength",
+          "warmup": [
+            "2\u20133 min easy cardio",
+            "Leg swings (gentle)",
+            "Band pull-aparts 2\u00d710"
+          ],
+          "cooldown": [
+            "Hamstring stretch",
+            "Upper back stretch",
+            "Breathing (5 slow breaths)"
+          ],
+          "exercises": [
+            {
+              "name": "Split Squat (short stride)",
+              "prescription": "3\u00d78/side",
+              "cues": [
+                "Vertical shin",
+                "Slight forward torso",
+                "Front heel heavy"
+              ],
+              "track": "weight"
+            },
+            {
+              "name": "Single-Leg RDL",
+              "prescription": "3\u00d78/side",
+              "cues": [
+                "Hips stay square",
+                "Reach long with back leg"
+              ],
+              "track": "weight"
+            },
+            {
+              "name": "Chest-Supported Row or Cable Row",
+              "prescription": "3\u00d710",
+              "cues": [
+                "Pull elbows back",
+                "Squeeze mid-back",
+                "No rib flare"
+              ],
+              "track": "weight"
+            },
+            {
+              "name": "Incline Push-Ups or DB Press",
+              "prescription": "2\u20133\u00d78\u201310",
+              "cues": [
+                "Exhale as you press",
+                "Core stays quiet"
+              ],
+              "track": "weight"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "weeks": [
+        5,
+        8
+      ],
+      "title": "Shape & Shrink",
+      "workouts": {
+        "A": {
+          "title": "Strength A (Heavy Glutes)",
+          "type": "strength",
+          "warmup": [
+            "2\u20133 min easy cardio",
+            "Glute activation 2\u00d710",
+            "Hip hinge patterning"
+          ],
+          "cooldown": [
+            "Glute stretch",
+            "Hip flexor stretch",
+            "Breathing (5 slow breaths)"
+          ],
+          "exercises": [
+            {
+              "name": "Hip Thrust",
+              "prescription": "4\u00d76\u20138",
+              "cues": [
+                "Brace lightly before lift",
+                "Full lockout, no flare",
+                "Pause 2 sec at top"
+              ],
+              "track": "weight"
+            },
+            {
+              "name": "Romanian Deadlift",
+              "prescription": "3\u00d78",
+              "cues": [
+                "Hips back",
+                "Ribs down",
+                "Long spine"
+              ],
+              "track": "weight"
+            },
+            {
+              "name": "Bulgarian Split Squat (glute bias)",
+              "prescription": "3\u00d78/side",
+              "cues": [
+                "Forward lean",
+                "Push through front heel"
+              ],
+              "track": "weight"
+            },
+            {
+              "name": "Banded Glute Bridge Pulses",
+              "prescription": "2\u00d720\u201325",
+              "cues": [
+                "Small pulse at the top",
+                "Keep ribs down and pelvis tucked",
+                "Constant glute tension"
+              ],
+              "track": "reps"
+            }
+          ]
+        },
+        "B": {
+          "title": "Strength B (Full Body)",
+          "type": "strength",
+          "warmup": [
+            "2\u20133 min easy cardio",
+            "Squat patterning",
+            "Band pull-aparts 2\u00d710"
+          ],
+          "cooldown": [
+            "Quad stretch",
+            "Lat stretch",
+            "Breathing (5 slow breaths)"
+          ],
+          "exercises": [
+            {
+              "name": "Goblet Squat (controlled)",
+              "prescription": "3\u00d78\u201310",
+              "cues": [
+                "Sit between hips",
+                "Exhale at the bottom"
+              ],
+              "track": "weight"
+            },
+            {
+              "name": "Single-Leg RDL",
+              "prescription": "3\u00d78/side",
+              "cues": [
+                "Balance first, load second"
+              ],
+              "track": "weight"
+            },
+            {
+              "name": "Overhead Press (light\u2013moderate)",
+              "prescription": "2\u00d78",
+              "cues": [
+                "Exhale before press",
+                "No rib pop"
+              ],
+              "track": "weight"
+            },
+            {
+              "name": "Lat Pulldown or Assisted Pull-Up",
+              "prescription": "3\u00d78\u201310",
+              "cues": [
+                "Pull elbows down",
+                "Chest tall"
+              ],
+              "track": "weight"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "weeks": [
+        9,
+        12
+      ],
+      "title": "Refine & Hold",
+      "workouts": {
+        "A": {
+          "title": "Strength A",
+          "type": "strength",
+          "warmup": [
+            "2\u20133 min easy cardio",
+            "Glute activation 2\u00d710",
+            "Hip hinge patterning"
+          ],
+          "cooldown": [
+            "Glute stretch",
+            "Breathing (5 slow breaths)"
+          ],
+          "exercises": [
+            {
+              "name": "Hip Thrust",
+              "prescription": "3\u00d76",
+              "cues": [
+                "Polish reps, not load",
+                "Pause 2 sec at top"
+              ],
+              "track": "weight"
+            },
+            {
+              "name": "Romanian Deadlift",
+              "prescription": "3\u00d76\u20138",
+              "cues": [
+                "Ribs down, long spine"
+              ],
+              "track": "weight"
+            },
+            {
+              "name": "Reverse Lunge (glute bias)",
+              "prescription": "2\u00d78/side",
+              "cues": [
+                "Slight forward lean; ribs stacked",
+                "Front heel heavy; drive through glute",
+                "Control the step-back; stop before SI irritation"
+              ],
+              "track": "weight"
+            },
+            {
+              "name": "Banded Glute Bridge Pulses",
+              "prescription": "2\u00d720\u201325",
+              "cues": [
+                "Small pulse at the top",
+                "Keep ribs down and pelvis tucked",
+                "Constant glute tension"
+              ],
+              "track": "reps"
+            }
+          ]
+        },
+        "B": {
+          "title": "Strength B",
+          "type": "strength",
+          "warmup": [
+            "2\u20133 min easy cardio",
+            "Leg swings (gentle)",
+            "Band pull-aparts 2\u00d710"
+          ],
+          "cooldown": [
+            "Hamstring stretch",
+            "Breathing (5 slow breaths)"
+          ],
+          "exercises": [
+            {
+              "name": "Split Squat",
+              "prescription": "3\u00d78/side",
+              "cues": [
+                "Polish reps, not load"
+              ],
+              "track": "weight"
+            },
+            {
+              "name": "Single-Leg RDL",
+              "prescription": "2\u00d78",
+              "cues": [
+                "Hips square",
+                "Move slow"
+              ],
+              "track": "weight"
+            },
+            {
+              "name": "Push-Ups / Press",
+              "prescription": "2\u00d78",
+              "cues": [
+                "Exhale as you press",
+                "Quiet core"
+              ],
+              "track": "weight"
+            },
+            {
+              "name": "Face Pulls",
+              "prescription": "2\u00d712",
+              "cues": [
+                "Elbows high",
+                "Squeeze rear delts"
+              ],
+              "track": "weight"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "success_criteria": [
+    "Abdomen stays flat during lifts",
+    "Reduced pinch thickness over time",
+    "Glutes feel worked, not quads",
+    "No SI flare-ups"
+  ],
+  "red_flags": [
+    "Doming/coning \u2192 regress exercise",
+    "Back pain \u2192 reduce load or range",
+    "Fatigue > form \u2192 stop set early"
+  ],
+  "corePhases": {
+    "1-4": {
+      "type": "single",
+      "exercises": [
+        {
+          "name": "Heel Slides",
+          "prescription": "2\u00d78/side",
+          "track": "reps"
+        },
+        {
+          "name": "Dead Bug (Opposite Arm + Leg)",
+          "prescription": "2\u00d76/side",
+          "track": "reps"
+        },
+        {
+          "name": "Side Plank",
+          "prescription": "2\u00d720\u201330 sec",
+          "track": "time"
+        },
+        {
+          "name": "Glute Bridge Hold",
+          "prescription": "2\u00d730\u201340 sec",
+          "track": "time"
+        }
+      ]
+    },
+    "5-8": {
+      "type": "single",
+      "exercises": [
+        {
+          "name": "Dead Bug Heel Tap",
+          "prescription": "2\u00d76/side",
+          "track": "reps"
+        },
+        {
+          "name": "Tall Kneeling Pallof Press",
+          "prescription": "2\u00d78/side",
+          "track": "reps"
+        },
+        {
+          "name": "Side Plank + Top Leg Lift",
+          "prescription": "2\u00d715\u201320 sec",
+          "track": "time"
+        },
+        {
+          "name": "Bent-Knee Hollow Hold",
+          "prescription": "3\u00d720 sec",
+          "track": "time"
+        }
+      ]
+    },
+    "9-12": {
+      "type": "alternate",
+      "A": [
+        {
+          "name": "Dead Bug w/ Band",
+          "prescription": "2\u00d76/side",
+          "track": "reps"
+        },
+        {
+          "name": "Bear Hover Shoulder Taps",
+          "prescription": "2\u00d76/side",
+          "track": "reps"
+        },
+        {
+          "name": "Suitcase Carry",
+          "prescription": "3\u00d730\u201345 sec/side",
+          "track": "time"
+        },
+        {
+          "name": "Straight-Leg Hollow Hold",
+          "prescription": "3\u00d720\u201330 sec",
+          "track": "time"
+        }
+      ],
+      "B": [
+        {
+          "name": "Half-Kneeling Pallof Press",
+          "prescription": "2\u00d78/side",
+          "track": "reps"
+        },
+        {
+          "name": "Slow Mountain Climbers",
+          "prescription": "2\u00d720\u201330 sec",
+          "track": "time"
+        },
+        {
+          "name": "Farmer Carry",
+          "prescription": "3\u00d740 sec",
+          "track": "time"
+        },
+        {
+          "name": "Hollow Hold with Arm Reach",
+          "prescription": "3\u00d720\u201330 sec",
+          "track": "time"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1136 @@
+{
+  "meta": {
+    "version": "1.0",
+    "note": "Estimates. Portion multipliers apply linearly. Iron mg optional."
+  },
+  "macroTargetsDefault": {
+    "calories": 1450,
+    "protein_g": 130,
+    "carbs_g": 120,
+    "fat_g": 50
+  },
+  "days": [
+    {
+      "id": "day1",
+      "title": "Day 1 \u2014 Turkey Taco Mountain",
+      "estimated_totals": {
+        "calories": 1450,
+        "protein_g": 135,
+        "carbs_g": 120,
+        "fat_g": 50,
+        "iron_mg": 18
+      },
+      "items": [
+        {
+          "meal": "Breakfast",
+          "name": "Coffee + vanilla protein shake as creamer",
+          "qty": 1,
+          "unit": "serving",
+          "calories": 120,
+          "protein_g": 25,
+          "carbs_g": 3,
+          "fat_g": 1,
+          "iron_mg": 0.2
+        },
+        {
+          "meal": "Breakfast",
+          "name": "Fat-free Greek yogurt",
+          "qty": 2,
+          "unit": "cup",
+          "calories": 130,
+          "protein_g": 23,
+          "carbs_g": 9,
+          "fat_g": 0,
+          "iron_mg": 0.1
+        },
+        {
+          "meal": "Breakfast",
+          "name": "Strawberries",
+          "qty": 1,
+          "unit": "cup",
+          "calories": 50,
+          "protein_g": 1,
+          "carbs_g": 12,
+          "fat_g": 0,
+          "iron_mg": 0.4
+        },
+        {
+          "meal": "Lunch",
+          "name": "Egg whites",
+          "qty": 2,
+          "unit": "cup",
+          "calories": 120,
+          "protein_g": 26,
+          "carbs_g": 1,
+          "fat_g": 0,
+          "iron_mg": 0.1
+        },
+        {
+          "meal": "Lunch",
+          "name": "Whole egg",
+          "qty": 1,
+          "unit": "egg",
+          "calories": 70,
+          "protein_g": 6,
+          "carbs_g": 0,
+          "fat_g": 5,
+          "iron_mg": 0.9
+        },
+        {
+          "meal": "Lunch",
+          "name": "Spinach (cooked)",
+          "qty": 2,
+          "unit": "cup",
+          "calories": 40,
+          "protein_g": 5,
+          "carbs_g": 5,
+          "fat_g": 0,
+          "iron_mg": 3.0
+        },
+        {
+          "meal": "Lunch",
+          "name": "Mushrooms + peppers (mixed)",
+          "qty": 2,
+          "unit": "cups",
+          "calories": 60,
+          "protein_g": 3,
+          "carbs_g": 12,
+          "fat_g": 0,
+          "iron_mg": 0.8
+        },
+        {
+          "meal": "Lunch",
+          "name": "Rye bread",
+          "qty": 1,
+          "unit": "slice",
+          "calories": 80,
+          "protein_g": 3,
+          "carbs_g": 15,
+          "fat_g": 1,
+          "iron_mg": 0.8
+        },
+        {
+          "meal": "Snack",
+          "name": "2% cottage cheese",
+          "qty": 1,
+          "unit": "cup",
+          "calories": 180,
+          "protein_g": 24,
+          "carbs_g": 8,
+          "fat_g": 5,
+          "iron_mg": 0.2
+        },
+        {
+          "meal": "Snack",
+          "name": "Cucumber + carrots (big bowl)",
+          "qty": 3,
+          "unit": "cups",
+          "calories": 90,
+          "protein_g": 3,
+          "carbs_g": 20,
+          "fat_g": 0,
+          "iron_mg": 0.8
+        },
+        {
+          "meal": "Dinner",
+          "name": "Extra-lean ground turkey",
+          "qty": 6,
+          "unit": "oz",
+          "calories": 50,
+          "protein_g": 7,
+          "carbs_g": 0,
+          "fat_g": 2,
+          "iron_mg": 0.35
+        },
+        {
+          "meal": "Dinner",
+          "name": "Cauliflower rice",
+          "qty": 3,
+          "unit": "cup",
+          "calories": 25,
+          "protein_g": 2,
+          "carbs_g": 5,
+          "fat_g": 0,
+          "iron_mg": 0.3
+        },
+        {
+          "meal": "Dinner",
+          "name": "Roasted peppers + onions",
+          "qty": 2,
+          "unit": "cups",
+          "calories": 90,
+          "protein_g": 2,
+          "carbs_g": 20,
+          "fat_g": 0,
+          "iron_mg": 0.8
+        },
+        {
+          "meal": "Dinner",
+          "name": "Salsa",
+          "qty": 0.5,
+          "unit": "0.5 cup",
+          "calories": 35,
+          "protein_g": 1,
+          "carbs_g": 8,
+          "fat_g": 0,
+          "iron_mg": 0.5
+        },
+        {
+          "meal": "Dinner",
+          "name": "Fat-free sour cream",
+          "qty": 0.5,
+          "unit": "0.25 cup",
+          "calories": 40,
+          "protein_g": 7,
+          "carbs_g": 5,
+          "fat_g": 0,
+          "iron_mg": 0.0
+        },
+        {
+          "meal": "Dinner",
+          "name": "Corn tortillas",
+          "qty": 2,
+          "unit": "tortilla",
+          "calories": 60,
+          "protein_g": 2,
+          "carbs_g": 12,
+          "fat_g": 1,
+          "iron_mg": 0.6
+        }
+      ]
+    },
+    {
+      "id": "day2",
+      "title": "Day 2 \u2014 Fish + Greens Day",
+      "estimated_totals": {
+        "calories": 1420,
+        "protein_g": 130,
+        "carbs_g": 130,
+        "fat_g": 45,
+        "iron_mg": 16
+      },
+      "items": [
+        {
+          "meal": "Breakfast",
+          "name": "Protein oats (oats + almond milk + protein)",
+          "qty": 1,
+          "unit": "bowl",
+          "calories": 350,
+          "protein_g": 30,
+          "carbs_g": 40,
+          "fat_g": 8,
+          "iron_mg": 4.0
+        },
+        {
+          "meal": "Breakfast",
+          "name": "Blueberries",
+          "qty": 0.5,
+          "unit": "cup",
+          "calories": 40,
+          "protein_g": 0,
+          "carbs_g": 10,
+          "fat_g": 0,
+          "iron_mg": 0.2
+        },
+        {
+          "meal": "Lunch",
+          "name": "Canned tuna",
+          "qty": 1,
+          "unit": "can",
+          "calories": 120,
+          "protein_g": 26,
+          "carbs_g": 0,
+          "fat_g": 1,
+          "iron_mg": 1.0
+        },
+        {
+          "meal": "Lunch",
+          "name": "Fat-free Greek yogurt (as dressing)",
+          "qty": 0.5,
+          "unit": "cup",
+          "calories": 65,
+          "protein_g": 12,
+          "carbs_g": 5,
+          "fat_g": 0,
+          "iron_mg": 0.1
+        },
+        {
+          "meal": "Lunch",
+          "name": "Celery + red onion",
+          "qty": 2,
+          "unit": "cups",
+          "calories": 50,
+          "protein_g": 2,
+          "carbs_g": 12,
+          "fat_g": 0,
+          "iron_mg": 0.4
+        },
+        {
+          "meal": "Lunch",
+          "name": "Protein wrap",
+          "qty": 1,
+          "unit": "wrap",
+          "calories": 200,
+          "protein_g": 10,
+          "carbs_g": 25,
+          "fat_g": 6,
+          "iron_mg": 2.0
+        },
+        {
+          "meal": "Lunch",
+          "name": "Spinach + tomato side salad",
+          "qty": 3,
+          "unit": "cups",
+          "calories": 60,
+          "protein_g": 3,
+          "carbs_g": 10,
+          "fat_g": 0,
+          "iron_mg": 2.5
+        },
+        {
+          "meal": "Snack",
+          "name": "Fat-free Greek yogurt",
+          "qty": 1.5,
+          "unit": "cup",
+          "calories": 130,
+          "protein_g": 23,
+          "carbs_g": 9,
+          "fat_g": 0,
+          "iron_mg": 0.1
+        },
+        {
+          "meal": "Snack",
+          "name": "Orange or kiwi",
+          "qty": 1,
+          "unit": "serving",
+          "calories": 70,
+          "protein_g": 1,
+          "carbs_g": 16,
+          "fat_g": 0,
+          "iron_mg": 0.2
+        },
+        {
+          "meal": "Dinner",
+          "name": "White fish fillet",
+          "qty": 6,
+          "unit": "oz",
+          "calories": 35,
+          "protein_g": 7,
+          "carbs_g": 0,
+          "fat_g": 0.5,
+          "iron_mg": 0.1
+        },
+        {
+          "meal": "Dinner",
+          "name": "Potatoes (roasted/boiled)",
+          "qty": 250,
+          "unit": "g",
+          "calories": 190,
+          "protein_g": 5,
+          "carbs_g": 44,
+          "fat_g": 0,
+          "iron_mg": 2.0
+        },
+        {
+          "meal": "Dinner",
+          "name": "Roasted veg (broccoli + zucchini)",
+          "qty": 3,
+          "unit": "cups",
+          "calories": 120,
+          "protein_g": 6,
+          "carbs_g": 24,
+          "fat_g": 1,
+          "iron_mg": 2.4
+        },
+        {
+          "meal": "Dinner",
+          "name": "Tzatziki (yogurt-based)",
+          "qty": 0.5,
+          "unit": "cup",
+          "calories": 80,
+          "protein_g": 12,
+          "carbs_g": 8,
+          "fat_g": 2,
+          "iron_mg": 0.1
+        }
+      ]
+    },
+    {
+      "id": "day3",
+      "title": "Day 3 \u2014 Chicken Veggie Wrap Day",
+      "estimated_totals": {
+        "calories": 1480,
+        "protein_g": 135,
+        "carbs_g": 120,
+        "fat_g": 50,
+        "iron_mg": 17
+      },
+      "items": [
+        {
+          "meal": "Breakfast",
+          "name": "Coffee + vanilla protein shake as creamer",
+          "qty": 1,
+          "unit": "serving",
+          "calories": 120,
+          "protein_g": 25,
+          "carbs_g": 3,
+          "fat_g": 1,
+          "iron_mg": 0.2
+        },
+        {
+          "meal": "Breakfast",
+          "name": "Fat-free Greek yogurt",
+          "qty": 1.5,
+          "unit": "cup",
+          "calories": 130,
+          "protein_g": 23,
+          "carbs_g": 9,
+          "fat_g": 0,
+          "iron_mg": 0.1
+        },
+        {
+          "meal": "Breakfast",
+          "name": "Mixed berries",
+          "qty": 1,
+          "unit": "cup",
+          "calories": 70,
+          "protein_g": 1,
+          "carbs_g": 17,
+          "fat_g": 0,
+          "iron_mg": 0.6
+        },
+        {
+          "meal": "Lunch",
+          "name": "Chicken breast",
+          "qty": 6,
+          "unit": "oz",
+          "calories": 47,
+          "protein_g": 8.7,
+          "carbs_g": 0,
+          "fat_g": 1,
+          "iron_mg": 0.2
+        },
+        {
+          "meal": "Lunch",
+          "name": "Protein wrap",
+          "qty": 1,
+          "unit": "wrap",
+          "calories": 200,
+          "protein_g": 10,
+          "carbs_g": 25,
+          "fat_g": 6,
+          "iron_mg": 2.0
+        },
+        {
+          "meal": "Lunch",
+          "name": "Wrap veg (lettuce, tomato, cucumber)",
+          "qty": 3,
+          "unit": "cups",
+          "calories": 75,
+          "protein_g": 3,
+          "carbs_g": 15,
+          "fat_g": 0,
+          "iron_mg": 1.2
+        },
+        {
+          "meal": "Lunch",
+          "name": "Yogurt-based chipotle sauce",
+          "qty": 0.25,
+          "unit": "cup",
+          "calories": 40,
+          "protein_g": 6,
+          "carbs_g": 4,
+          "fat_g": 1,
+          "iron_mg": 0.0
+        },
+        {
+          "meal": "Lunch",
+          "name": "Raw peppers + snap peas",
+          "qty": 2,
+          "unit": "cups",
+          "calories": 80,
+          "protein_g": 4,
+          "carbs_g": 18,
+          "fat_g": 0,
+          "iron_mg": 1.0
+        },
+        {
+          "meal": "Snack",
+          "name": "2% cottage cheese",
+          "qty": 1,
+          "unit": "cup",
+          "calories": 180,
+          "protein_g": 24,
+          "carbs_g": 8,
+          "fat_g": 5,
+          "iron_mg": 0.2
+        },
+        {
+          "meal": "Snack",
+          "name": "Pineapple or mango",
+          "qty": 1,
+          "unit": "serving",
+          "calories": 80,
+          "protein_g": 1,
+          "carbs_g": 20,
+          "fat_g": 0,
+          "iron_mg": 0.3
+        },
+        {
+          "meal": "Dinner",
+          "name": "Extra-lean ground turkey",
+          "qty": 5,
+          "unit": "oz",
+          "calories": 50,
+          "protein_g": 7,
+          "carbs_g": 0,
+          "fat_g": 2,
+          "iron_mg": 0.35
+        },
+        {
+          "meal": "Dinner",
+          "name": "Spinach (cooked)",
+          "qty": 3,
+          "unit": "cup",
+          "calories": 40,
+          "protein_g": 5,
+          "carbs_g": 5,
+          "fat_g": 0,
+          "iron_mg": 3.0
+        },
+        {
+          "meal": "Dinner",
+          "name": "Onion + garlic",
+          "qty": 1,
+          "unit": "cup",
+          "calories": 40,
+          "protein_g": 1,
+          "carbs_g": 9,
+          "fat_g": 0,
+          "iron_mg": 0.3
+        },
+        {
+          "meal": "Dinner",
+          "name": "Cauliflower rice",
+          "qty": 2,
+          "unit": "cup",
+          "calories": 25,
+          "protein_g": 2,
+          "carbs_g": 5,
+          "fat_g": 0,
+          "iron_mg": 0.3
+        }
+      ]
+    },
+    {
+      "id": "day4",
+      "title": "Day 4 \u2014 Egg White + Potato Power",
+      "estimated_totals": {
+        "calories": 1400,
+        "protein_g": 140,
+        "carbs_g": 125,
+        "fat_g": 40,
+        "iron_mg": 18
+      },
+      "items": [
+        {
+          "meal": "Breakfast",
+          "name": "Egg whites",
+          "qty": 2.5,
+          "unit": "cup",
+          "calories": 120,
+          "protein_g": 26,
+          "carbs_g": 1,
+          "fat_g": 0,
+          "iron_mg": 0.1
+        },
+        {
+          "meal": "Breakfast",
+          "name": "Whole egg",
+          "qty": 1,
+          "unit": "egg",
+          "calories": 70,
+          "protein_g": 6,
+          "carbs_g": 0,
+          "fat_g": 5,
+          "iron_mg": 0.9
+        },
+        {
+          "meal": "Breakfast",
+          "name": "Spinach + mushrooms (cooked)",
+          "qty": 3,
+          "unit": "cups",
+          "calories": 120,
+          "protein_g": 12,
+          "carbs_g": 18,
+          "fat_g": 1,
+          "iron_mg": 7.0
+        },
+        {
+          "meal": "Breakfast",
+          "name": "Rye bread",
+          "qty": 1,
+          "unit": "slice",
+          "calories": 80,
+          "protein_g": 3,
+          "carbs_g": 15,
+          "fat_g": 1,
+          "iron_mg": 0.8
+        },
+        {
+          "meal": "Lunch",
+          "name": "Fat-free Greek yogurt (savory bowl)",
+          "qty": 2,
+          "unit": "cups",
+          "calories": 260,
+          "protein_g": 46,
+          "carbs_g": 18,
+          "fat_g": 0,
+          "iron_mg": 0.2
+        },
+        {
+          "meal": "Lunch",
+          "name": "Cucumber + tomato + herbs",
+          "qty": 3,
+          "unit": "cups",
+          "calories": 75,
+          "protein_g": 3,
+          "carbs_g": 15,
+          "fat_g": 0,
+          "iron_mg": 1.0
+        },
+        {
+          "meal": "Snack",
+          "name": "Protein wrap",
+          "qty": 1,
+          "unit": "wrap",
+          "calories": 200,
+          "protein_g": 10,
+          "carbs_g": 25,
+          "fat_g": 6,
+          "iron_mg": 2.0
+        },
+        {
+          "meal": "Snack",
+          "name": "Fat-free sour cream + salsa",
+          "qty": 0.5,
+          "unit": "cup",
+          "calories": 110,
+          "protein_g": 16,
+          "carbs_g": 14,
+          "fat_g": 0,
+          "iron_mg": 0.5
+        },
+        {
+          "meal": "Snack",
+          "name": "Bell pepper strips",
+          "qty": 2,
+          "unit": "cups",
+          "calories": 60,
+          "protein_g": 2,
+          "carbs_g": 14,
+          "fat_g": 0,
+          "iron_mg": 0.8
+        },
+        {
+          "meal": "Dinner",
+          "name": "Canned tuna",
+          "qty": 1,
+          "unit": "can",
+          "calories": 120,
+          "protein_g": 26,
+          "carbs_g": 0,
+          "fat_g": 1,
+          "iron_mg": 1.0
+        },
+        {
+          "meal": "Dinner",
+          "name": "Potatoes",
+          "qty": 3.0,
+          "unit": "100 g",
+          "calories": 77,
+          "protein_g": 2,
+          "carbs_g": 17,
+          "fat_g": 0,
+          "iron_mg": 0.8
+        },
+        {
+          "meal": "Dinner",
+          "name": "Spinach salad",
+          "qty": 2,
+          "unit": "cups",
+          "calories": 30,
+          "protein_g": 2,
+          "carbs_g": 5,
+          "fat_g": 0,
+          "iron_mg": 1.5
+        },
+        {
+          "meal": "Dinner",
+          "name": "Yogurt-mustard dressing",
+          "qty": 0.25,
+          "unit": "cup",
+          "calories": 40,
+          "protein_g": 6,
+          "carbs_g": 4,
+          "fat_g": 1,
+          "iron_mg": 0.0
+        }
+      ]
+    },
+    {
+      "id": "day5",
+      "title": "Day 5 \u2014 High Volume, Lower-Carb Feel",
+      "estimated_totals": {
+        "calories": 1380,
+        "protein_g": 130,
+        "carbs_g": 105,
+        "fat_g": 50,
+        "iron_mg": 15
+      },
+      "items": [
+        {
+          "meal": "Breakfast",
+          "name": "Coffee + vanilla protein shake as creamer",
+          "qty": 1,
+          "unit": "serving",
+          "calories": 120,
+          "protein_g": 25,
+          "carbs_g": 3,
+          "fat_g": 1,
+          "iron_mg": 0.2
+        },
+        {
+          "meal": "Breakfast",
+          "name": "Fat-free Greek yogurt",
+          "qty": 2,
+          "unit": "cup",
+          "calories": 130,
+          "protein_g": 23,
+          "carbs_g": 9,
+          "fat_g": 0,
+          "iron_mg": 0.1
+        },
+        {
+          "meal": "Lunch",
+          "name": "Chicken breast",
+          "qty": 6,
+          "unit": "oz",
+          "calories": 47,
+          "protein_g": 8.7,
+          "carbs_g": 0,
+          "fat_g": 1,
+          "iron_mg": 0.2
+        },
+        {
+          "meal": "Lunch",
+          "name": "Roasted veg mix (broccoli, zucchini, peppers)",
+          "qty": 4,
+          "unit": "cups",
+          "calories": 160,
+          "protein_g": 8,
+          "carbs_g": 32,
+          "fat_g": 1,
+          "iron_mg": 4.0
+        },
+        {
+          "meal": "Lunch",
+          "name": "Yogurt cilantro-lime sauce",
+          "qty": 0.25,
+          "unit": "cup",
+          "calories": 40,
+          "protein_g": 6,
+          "carbs_g": 4,
+          "fat_g": 1,
+          "iron_mg": 0.0
+        },
+        {
+          "meal": "Snack",
+          "name": "2% cottage cheese",
+          "qty": 1,
+          "unit": "cup",
+          "calories": 180,
+          "protein_g": 24,
+          "carbs_g": 8,
+          "fat_g": 5,
+          "iron_mg": 0.2
+        },
+        {
+          "meal": "Snack",
+          "name": "Berries",
+          "qty": 1,
+          "unit": "cup",
+          "calories": 70,
+          "protein_g": 1,
+          "carbs_g": 17,
+          "fat_g": 0,
+          "iron_mg": 0.6
+        },
+        {
+          "meal": "Dinner",
+          "name": "White fish fillet",
+          "qty": 6,
+          "unit": "oz",
+          "calories": 35,
+          "protein_g": 7,
+          "carbs_g": 0,
+          "fat_g": 0.5,
+          "iron_mg": 0.1
+        },
+        {
+          "meal": "Dinner",
+          "name": "Corn tortillas",
+          "qty": 2,
+          "unit": "tortilla",
+          "calories": 60,
+          "protein_g": 2,
+          "carbs_g": 12,
+          "fat_g": 1,
+          "iron_mg": 0.6
+        },
+        {
+          "meal": "Dinner",
+          "name": "Slaw (cabbage + lime)",
+          "qty": 2,
+          "unit": "cups",
+          "calories": 60,
+          "protein_g": 2,
+          "carbs_g": 14,
+          "fat_g": 0,
+          "iron_mg": 0.8
+        },
+        {
+          "meal": "Dinner",
+          "name": "Salsa",
+          "qty": 0.5,
+          "unit": "0.5 cup",
+          "calories": 35,
+          "protein_g": 1,
+          "carbs_g": 8,
+          "fat_g": 0,
+          "iron_mg": 0.5
+        },
+        {
+          "meal": "Dinner",
+          "name": "Pickles OR pickled jalape\u00f1os (optional)",
+          "qty": 1,
+          "unit": "serving",
+          "calories": 10,
+          "protein_g": 0,
+          "carbs_g": 2,
+          "fat_g": 0,
+          "iron_mg": 0.0
+        }
+      ]
+    },
+    {
+      "id": "day6",
+      "title": "Day 6 \u2014 Strength Day, Carb Supported",
+      "estimated_totals": {
+        "calories": 1520,
+        "protein_g": 130,
+        "carbs_g": 150,
+        "fat_g": 45,
+        "iron_mg": 17
+      },
+      "items": [
+        {
+          "meal": "Breakfast",
+          "name": "Protein oats (oats + almond milk + protein)",
+          "qty": 1,
+          "unit": "bowl",
+          "calories": 350,
+          "protein_g": 30,
+          "carbs_g": 40,
+          "fat_g": 8,
+          "iron_mg": 4.0
+        },
+        {
+          "meal": "Breakfast",
+          "name": "Strawberries",
+          "qty": 1,
+          "unit": "cup",
+          "calories": 50,
+          "protein_g": 1,
+          "carbs_g": 12,
+          "fat_g": 0,
+          "iron_mg": 0.4
+        },
+        {
+          "meal": "Lunch",
+          "name": "Extra-lean ground turkey",
+          "qty": 6,
+          "unit": "oz",
+          "calories": 50,
+          "protein_g": 7,
+          "carbs_g": 0,
+          "fat_g": 2,
+          "iron_mg": 0.35
+        },
+        {
+          "meal": "Lunch",
+          "name": "Potatoes",
+          "qty": 3.0,
+          "unit": "100 g",
+          "calories": 77,
+          "protein_g": 2,
+          "carbs_g": 17,
+          "fat_g": 0,
+          "iron_mg": 0.8
+        },
+        {
+          "meal": "Lunch",
+          "name": "Spinach + peppers (mixed)",
+          "qty": 3,
+          "unit": "cups",
+          "calories": 120,
+          "protein_g": 8,
+          "carbs_g": 20,
+          "fat_g": 1,
+          "iron_mg": 5.0
+        },
+        {
+          "meal": "Lunch",
+          "name": "Salsa",
+          "qty": 0.5,
+          "unit": "0.5 cup",
+          "calories": 35,
+          "protein_g": 1,
+          "carbs_g": 8,
+          "fat_g": 0,
+          "iron_mg": 0.5
+        },
+        {
+          "meal": "Snack",
+          "name": "Fat-free Greek yogurt",
+          "qty": 1,
+          "unit": "cup",
+          "calories": 130,
+          "protein_g": 23,
+          "carbs_g": 9,
+          "fat_g": 0,
+          "iron_mg": 0.1
+        },
+        {
+          "meal": "Snack",
+          "name": "Kiwi",
+          "qty": 1,
+          "unit": "serving",
+          "calories": 60,
+          "protein_g": 1,
+          "carbs_g": 15,
+          "fat_g": 0,
+          "iron_mg": 0.3
+        },
+        {
+          "meal": "Dinner",
+          "name": "Egg whites",
+          "qty": 2,
+          "unit": "cup",
+          "calories": 120,
+          "protein_g": 26,
+          "carbs_g": 1,
+          "fat_g": 0,
+          "iron_mg": 0.1
+        },
+        {
+          "meal": "Dinner",
+          "name": "Whole egg",
+          "qty": 1,
+          "unit": "egg",
+          "calories": 70,
+          "protein_g": 6,
+          "carbs_g": 0,
+          "fat_g": 5,
+          "iron_mg": 0.9
+        },
+        {
+          "meal": "Dinner",
+          "name": "Veg scramble add-ins (onion, zucchini)",
+          "qty": 2,
+          "unit": "cups",
+          "calories": 80,
+          "protein_g": 3,
+          "carbs_g": 16,
+          "fat_g": 0,
+          "iron_mg": 0.6
+        },
+        {
+          "meal": "Dinner",
+          "name": "Protein wrap",
+          "qty": 1,
+          "unit": "wrap",
+          "calories": 200,
+          "protein_g": 10,
+          "carbs_g": 25,
+          "fat_g": 6,
+          "iron_mg": 2.0
+        }
+      ]
+    }
+  ],
+  "catalog": [
+    {
+      "name": "Fat-free Greek yogurt",
+      "unit": "cup",
+      "calories": 130,
+      "protein_g": 23,
+      "carbs_g": 9,
+      "fat_g": 0,
+      "iron_mg": 0.1
+    },
+    {
+      "name": "2% cottage cheese",
+      "unit": "cup",
+      "calories": 180,
+      "protein_g": 24,
+      "carbs_g": 8,
+      "fat_g": 5,
+      "iron_mg": 0.2
+    },
+    {
+      "name": "Egg whites",
+      "unit": "cup",
+      "calories": 120,
+      "protein_g": 26,
+      "carbs_g": 1,
+      "fat_g": 0,
+      "iron_mg": 0.1
+    },
+    {
+      "name": "Whole egg",
+      "unit": "egg",
+      "calories": 70,
+      "protein_g": 6,
+      "carbs_g": 0,
+      "fat_g": 5,
+      "iron_mg": 0.9
+    },
+    {
+      "name": "Chicken breast",
+      "unit": "oz",
+      "calories": 47,
+      "protein_g": 8.7,
+      "carbs_g": 0,
+      "fat_g": 1,
+      "iron_mg": 0.2
+    },
+    {
+      "name": "Extra-lean ground turkey",
+      "unit": "oz",
+      "calories": 50,
+      "protein_g": 7,
+      "carbs_g": 0,
+      "fat_g": 2,
+      "iron_mg": 0.35
+    },
+    {
+      "name": "White fish fillet",
+      "unit": "oz",
+      "calories": 35,
+      "protein_g": 7,
+      "carbs_g": 0,
+      "fat_g": 0.5,
+      "iron_mg": 0.1
+    },
+    {
+      "name": "Canned tuna",
+      "unit": "can",
+      "calories": 120,
+      "protein_g": 26,
+      "carbs_g": 0,
+      "fat_g": 1,
+      "iron_mg": 1.0
+    },
+    {
+      "name": "Oats (dry)",
+      "unit": "0.5 cup",
+      "calories": 150,
+      "protein_g": 5,
+      "carbs_g": 27,
+      "fat_g": 3,
+      "iron_mg": 2.0
+    },
+    {
+      "name": "Potatoes",
+      "unit": "100 g",
+      "calories": 77,
+      "protein_g": 2,
+      "carbs_g": 17,
+      "fat_g": 0,
+      "iron_mg": 0.8
+    },
+    {
+      "name": "Cauliflower rice",
+      "unit": "cup",
+      "calories": 25,
+      "protein_g": 2,
+      "carbs_g": 5,
+      "fat_g": 0,
+      "iron_mg": 0.3
+    },
+    {
+      "name": "Corn tortillas",
+      "unit": "tortilla",
+      "calories": 60,
+      "protein_g": 2,
+      "carbs_g": 12,
+      "fat_g": 1,
+      "iron_mg": 0.6
+    },
+    {
+      "name": "Protein wrap",
+      "unit": "wrap",
+      "calories": 200,
+      "protein_g": 10,
+      "carbs_g": 25,
+      "fat_g": 6,
+      "iron_mg": 2.0
+    },
+    {
+      "name": "Spinach (cooked)",
+      "unit": "cup",
+      "calories": 40,
+      "protein_g": 5,
+      "carbs_g": 5,
+      "fat_g": 0,
+      "iron_mg": 3.0
+    },
+    {
+      "name": "Mixed non-starchy veg",
+      "unit": "cup",
+      "calories": 40,
+      "protein_g": 2,
+      "carbs_g": 8,
+      "fat_g": 0,
+      "iron_mg": 0.4
+    },
+    {
+      "name": "Fruit (berries/kiwi/orange)",
+      "unit": "serving",
+      "calories": 70,
+      "protein_g": 1,
+      "carbs_g": 16,
+      "fat_g": 0,
+      "iron_mg": 0.3
+    },
+    {
+      "name": "Salsa",
+      "unit": "0.5 cup",
+      "calories": 35,
+      "protein_g": 1,
+      "carbs_g": 8,
+      "fat_g": 0,
+      "iron_mg": 0.5
+    },
+    {
+      "name": "Fat-free sour cream",
+      "unit": "0.25 cup",
+      "calories": 40,
+      "protein_g": 7,
+      "carbs_g": 5,
+      "fat_g": 0,
+      "iron_mg": 0.0
+    }
+  ]
+}
