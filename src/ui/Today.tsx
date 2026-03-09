@@ -3,6 +3,7 @@ import { saveSession, earnBadge, saveWaterLog } from '../lib/db';
 import { isoToday, workoutTemplate, computeWeekNumber, phaseForWeek, addDaysISO, dayOfWeekISO } from '../lib/plan';
 import type { SessionLog, SetLog, WorkoutKey } from '../lib/db';
 import Session from './Session';
+import Modal from './components/Modal';
 import { updateStreakOnStrengthCompletion } from '../lib/streakLogic';
 
 function isoWeekKeyFromISO(iso: string){
@@ -27,6 +28,9 @@ export default function Today({ ctx }:{ ctx:any }){
 
   const [active, setActive] = useState<SessionLog|null>(null);
   const [toast, setToast] = useState<{title:string; sub?:string} | null>(null);
+  const [startPickerOpen, setStartPickerOpen] = useState(false);
+  const [startWorkoutKey, setStartWorkoutKey] = useState<WorkoutKey>('CORE');
+  const [startISO, setStartISO] = useState<string>(todayISO);
 
   const streakText = ctx.streak.paused ? `🔥 ${ctx.streak.current} (paused)` : `🔥 ${ctx.streak.current}`;
   const weekPct = Math.round((displayWeek / Math.max(1, displayWeeksTotal)) * 100);
@@ -78,7 +82,7 @@ export default function Today({ ctx }:{ ctx:any }){
     const wn = Math.max(1, Math.min(12, programStartWeek + Math.max(0, computeWeekNumber(ctx.settings.startDateISO, pick.isoDate) - 1)));
     return { ...pick, weekNumber: wn, phase: phaseForWeek(wn) };
   }, [ctx.sessions, ctx.settings.startDateISO, todayISO, weekNumber, phase, programStartWeek]);
-  const showAccessory = weekNumber >= 5 && weekNumber <= 8;
+
   const isCoreDay = [1,2,3,5,6].includes(todayDow);  // Mon Tue Wed Fri Sat
   const isPilatesDay = todayDow === 6;               // Sat
   const strengthDueToday = nextStrength.isoDate <= todayISO;
@@ -186,6 +190,18 @@ export default function Today({ ctx }:{ ctx:any }){
     };
   }
 
+  function openStartPicker(workoutKey: WorkoutKey, suggestedISO: string = todayISO){
+    setStartWorkoutKey(workoutKey);
+    setStartISO(suggestedISO);
+    setStartPickerOpen(true);
+  }
+
+  function confirmStartPicker(){
+    setStartPickerOpen(false);
+    setActive(buildSession(startWorkoutKey, startISO));
+  }
+
+
   async function onFinish(session: SessionLog){
     if (session.workoutKey === 'CORE') await earnBadge('core-apprentice');
     if (session.workoutKey === 'GLUTE') await earnBadge('glute-guild');
@@ -215,6 +231,34 @@ export default function Today({ ctx }:{ ctx:any }){
 
   return (
     <div className="container">
+      <Modal
+        open={startPickerOpen}
+        title="Log workout"
+        subtitle="Choose the date this workout was completed."
+        onClose={()=>setStartPickerOpen(false)}
+        footer={
+          <div className="row" style={{justifyContent:'flex-end'}}>
+            <button className="smallBtn" onClick={()=>setStartPickerOpen(false)}>Cancel</button>
+            <button className="smallBtn primary" onClick={confirmStartPicker}>Start</button>
+          </div>
+        }
+      >
+        <div className="row" style={{flexWrap:'wrap'}}>
+          <button className={startISO===todayISO ? "smallBtn primary" : "smallBtn"} onClick={()=>setStartISO(todayISO)}>Today</button>
+          <button className={startISO===addDaysISO(todayISO,-1) ? "smallBtn primary" : "smallBtn"} onClick={()=>setStartISO(addDaysISO(todayISO,-1))}>Yesterday</button>
+        </div>
+
+        <div style={{height:12}} />
+        <label className="pill">
+          Workout date&nbsp;
+          <input className="input" style={{width:170}} type="date" value={startISO} max={todayISO} onChange={(e)=>setStartISO(e.target.value)} />
+        </label>
+
+        <div style={{height:12}} />
+        <div className="muted">
+          This will save <strong style={{color:'#fff'}}>Workout {startWorkoutKey}</strong> for <strong style={{color:'#fff'}}>{startISO}</strong>.
+        </div>
+      </Modal>
       {toast && (
         <div className="toast" role="status" aria-live="polite">
           <div className="toastTitle">{toast.title}</div>
@@ -294,7 +338,7 @@ export default function Today({ ctx }:{ ctx:any }){
                       <div className="exerciseName">👙 Core</div>
                       <div className="muted">5×/week · 6–10 min</div>
                     </div>
-                    <button className={coreDoneToday ? "smallBtn" : "smallBtn primary"} onClick={()=> setActive(buildSession('CORE', todayISO))}>
+                    <button className={coreDoneToday ? "smallBtn" : "smallBtn primary"} onClick={()=> openStartPicker('CORE', todayISO)}>
                       {coreDoneToday ? "View" : "Start"}
                     </button>
                   </div>
@@ -322,7 +366,7 @@ export default function Today({ ctx }:{ ctx:any }){
                     </div>
                     <button
                       className={strengthDoneToday ? "smallBtn" : "smallBtn primary"}
-                      onClick={()=> setActive(buildSession(nextStrength.workoutKey, todayISO))}
+                      onClick={()=> openStartPicker(nextStrength.workoutKey, todayISO)}
                     >
                       {strengthDoneToday ? "View" : "Start"}
                     </button>
@@ -337,7 +381,7 @@ export default function Today({ ctx }:{ ctx:any }){
                       <div className="exerciseName">🧘 Pilates</div>
                       <div className="muted">Upper body · 20 min</div>
                     </div>
-                    <button className={pilatesDoneToday ? "smallBtn" : "smallBtn primary"} onClick={()=> setActive(buildSession('PILATES', todayISO))}>
+                    <button className={pilatesDoneToday ? "smallBtn" : "smallBtn primary"} onClick={()=> openStartPicker('PILATES', todayISO)}>
                       {pilatesDoneToday ? "View" : "Start"}
                     </button>
                   </div>
@@ -364,13 +408,13 @@ export default function Today({ ctx }:{ ctx:any }){
             <div style={{height:12}} />
 
             {primaryAction==='strength' && (
-              <button className="bigBtn" onClick={()=> setActive(buildSession(nextStrength.workoutKey, todayISO))}>START STRENGTH</button>
+              <button className="bigBtn" onClick={()=> openStartPicker(nextStrength.workoutKey, todayISO)}>START STRENGTH</button>
             )}
             {primaryAction==='pilates' && (
-              <button className="bigBtn" onClick={()=> setActive(buildSession('PILATES', todayISO))}>START PILATES</button>
+              <button className="bigBtn" onClick={()=> openStartPicker('PILATES', todayISO)}>START PILATES</button>
             )}
             {primaryAction==='core' && (
-              <button className="bigBtn" onClick={()=> setActive(buildSession('CORE', todayISO))}>START CORE</button>
+              <button className="bigBtn" onClick={()=> openStartPicker('CORE', todayISO)}>START CORE</button>
             )}
             {primaryAction==='cardio' && (
               <button className="bigBtn" onClick={()=> ctx.setTab('cardio')}>LOG CARDIO</button>
@@ -383,7 +427,7 @@ export default function Today({ ctx }:{ ctx:any }){
 
             <div className="row" style={{flexWrap:'wrap'}}>
               {showAccessory && (
-                <button className="smallBtn orchid" onClick={()=> setActive(buildSession('GLUTE', todayISO))}>
+                <button className="smallBtn orchid" onClick={()=> openStartPicker('GLUTE', todayISO)}>
                   Optional Glute Accessory
                 </button>
               )}

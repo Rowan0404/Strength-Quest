@@ -354,7 +354,7 @@ export async function getWaterLog(isoDate: ISODate){
 }
 export async function saveWaterLog(log: WaterLog){
   const db = await dbPromise;
-  await db.put('water', log);
+  await db.put('water', log, log.isoDate);
 }
 export async function listWaterLogs(){
   const db = await dbPromise;
