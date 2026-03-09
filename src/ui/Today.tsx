@@ -426,11 +426,6 @@ export default function Today({ ctx }:{ ctx:any }){
             <div style={{height:10}} />
 
             <div className="row" style={{flexWrap:'wrap'}}>
-              {showAccessory && (
-                <button className="smallBtn orchid" onClick={()=> openStartPicker('GLUTE', todayISO)}>
-                  Optional Glute Accessory
-                </button>
-              )}
               <button className="smallBtn" onClick={()=>ctx.setTab('meals')}>Open Meals + Macros</button>
               <button className="smallBtn" onClick={()=>ctx.setTab('progress')}>Open Progress</button>
             </div>
