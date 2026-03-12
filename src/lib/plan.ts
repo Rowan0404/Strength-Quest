@@ -3,7 +3,14 @@ import type { ISODate, WorkoutKey } from './db';
 
 const DOW_MAP: Record<string, number> = { SU:0, MO:1, TU:2, WE:3, TH:4, FR:5, SA:6 };
 
-export function isoToday(): ISODate { return new Date().toISOString().slice(0,10); }
+export function isoToday(timezone: string = 'America/Halifax'): ISODate {
+  return new Intl.DateTimeFormat('en-CA', {
+    timeZone: timezone,
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit'
+  }).format(new Date()) as ISODate;
+}
 export function addDaysISO(iso: ISODate, days: number): ISODate {
   const d = new Date(iso + 'T00:00:00'); d.setDate(d.getDate()+days); return d.toISOString().slice(0,10);
 }

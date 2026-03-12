@@ -45,6 +45,7 @@ export type Settings = {
   programStartWeek: number;
   displayWeeksTotal: number;
   waterGoalMl: number;
+  timezone: string;
 
   // Nutrition targets
   nutritionMode: 'single'|'auto_strength_days';
@@ -202,6 +203,7 @@ export async function getSettings(): Promise<Settings> {
     programStartWeek: 4,
     displayWeeksTotal: 9,
     waterGoalMl: 2000,
+    timezone: 'America/Halifax',
     nutritionMode: 'auto_strength_days',
     restDayTargets: DEFAULT_REST,
     strengthDayTargets: DEFAULT_STRENGTH,
@@ -245,7 +247,8 @@ export async function getSettings(): Promise<Settings> {
     cardioGoalMinPerWeek: Number(migrated.cardioGoalMinPerWeek ?? defaults.cardioGoalMinPerWeek ?? 240),
     programStartWeek: Number(migrated.programStartWeek ?? defaults.programStartWeek ?? 4),
     displayWeeksTotal: Number(migrated.displayWeeksTotal ?? defaults.displayWeeksTotal ?? 9),
-    waterGoalMl: Number(migrated.waterGoalMl ?? defaults.waterGoalMl ?? 2000)
+    waterGoalMl: Number(migrated.waterGoalMl ?? defaults.waterGoalMl ?? 2000),
+    timezone: String(migrated.timezone ?? defaults.timezone ?? 'America/Halifax')
   };
 
   if (JSON.stringify(merged) !== JSON.stringify(s)) {
@@ -354,7 +357,7 @@ export async function getWaterLog(isoDate: ISODate){
 }
 export async function saveWaterLog(log: WaterLog){
   const db = await dbPromise;
-  await db.put('water', log);
+  await db.put('water', log, log.isoDate);
 }
 export async function listWaterLogs(){
   const db = await dbPromise;

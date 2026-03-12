@@ -23,7 +23,7 @@ function withinDays(iso: string, days: number){
 }
 
 export default function Progress({ ctx }:{ ctx:any }){
-  const today = isoToday();
+  const today = isoToday(ctx.settings?.timezone ?? 'America/Halifax');
   const thisWeekKey = isoWeekKeyFromISO(today);
   const [badgesOpen, setBadgesOpen] = useState(false);
   const earnedSet = useMemo(()=> new Set((ctx.badges ?? []).map((x:any)=>x.id)), [ctx.badges]);

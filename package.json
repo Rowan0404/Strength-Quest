@@ -1,13 +1,12 @@
 {
   "name": "strength-quest-pwa",
   "private": true,
-  "version": "1.6.3",
+  "version": "1.6.5",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
-    "deploy": "npm run build && gh-pages -d dist"
+    "preview": "vite preview"
   },
   "dependencies": {
     "idb": "^8.0.0",
@@ -18,7 +17,6 @@
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",
-    "gh-pages": "^6.3.0",
     "typescript": "^5.5.4",
     "vite": "^5.4.3",
     "vite-plugin-pwa": "^0.20.5"

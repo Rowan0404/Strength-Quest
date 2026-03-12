@@ -22,7 +22,7 @@ function isoWeekKeyFromISO(iso: string){
 }
 
 export default function Cardio({ ctx }:{ ctx:any }){
-  const [iso, setIso] = useState<string>(isoToday());
+  const [iso, setIso] = useState<string>(isoToday(ctx.settings?.timezone ?? 'America/Halifax'));
   const [all, setAll] = useState<CardioLog[]>([]);
 
   // modal state

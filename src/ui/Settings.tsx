@@ -25,6 +25,7 @@ export default function Settings({ ctx }:{ ctx:any }){
   const [programStartWeek, setProgramStartWeek] = useState(String(ctx.settings.programStartWeek ?? 4));
   const [displayWeeksTotal, setDisplayWeeksTotal] = useState(String(ctx.settings.displayWeeksTotal ?? 9));
   const [waterGoalMl, setWaterGoalMl] = useState(String(ctx.settings.waterGoalMl ?? 2000));
+  const [timezone, setTimezone] = useState(String(ctx.settings.timezone ?? 'America/Halifax'));
   const [savedMsg, setSavedMsg] = useState('');
 
   async function save(){
@@ -50,7 +51,8 @@ export default function Settings({ ctx }:{ ctx:any }){
       cardioGoalMinPerWeek: Number(cardioGoal),
       programStartWeek: Number(programStartWeek),
       displayWeeksTotal: Number(displayWeeksTotal),
-      waterGoalMl: Number(waterGoalMl)
+      waterGoalMl: Number(waterGoalMl),
+      timezone
     };
     await ctx.updateSettings(next);
     await ctx.reload();
@@ -137,6 +139,18 @@ export default function Settings({ ctx }:{ ctx:any }){
           <label className="pill">
             Water goal (mL)&nbsp;
             <input className="input" style={{width:100}} inputMode="numeric" value={waterGoalMl} onChange={(e)=>setWaterGoalMl(e.target.value)} />
+          </label>
+
+          <label className="pill">
+            Timezone&nbsp;
+            <select className="input" style={{width:190}} value={timezone} onChange={(e)=>setTimezone(e.target.value)}>
+              <option value="America/Halifax">Atlantic (Halifax)</option>
+              <option value="America/Toronto">Eastern (Toronto)</option>
+              <option value="America/Winnipeg">Central (Winnipeg)</option>
+              <option value="America/Edmonton">Mountain (Edmonton)</option>
+              <option value="America/Vancouver">Pacific (Vancouver)</option>
+              <option value="UTC">UTC</option>
+            </select>
           </label>
         </div>
 

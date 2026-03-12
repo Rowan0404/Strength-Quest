@@ -17,7 +17,7 @@ function isoWeekKeyFromISO(iso: string){
 }
 
 export default function Today({ ctx }:{ ctx:any }){
-  const todayISO = isoToday();
+  const todayISO = isoToday(ctx.settings.timezone ?? 'America/Halifax');
   const displayWeeksTotal = Number(ctx.settings.displayWeeksTotal ?? 9);
   const programStartWeek = Number(ctx.settings.programStartWeek ?? 4);
   const elapsedWeeks = Math.max(0, computeWeekNumber(ctx.settings.startDateISO, todayISO) - 1);
@@ -249,6 +249,14 @@ export default function Today({ ctx }:{ ctx:any }){
         </div>
 
         <div style={{height:12}} />
+        <div className="row" style={{flexWrap:'wrap'}}>
+          <button className={startWorkoutKey==='A' ? "smallBtn primary" : "smallBtn"} onClick={()=>setStartWorkoutKey('A')}>💪 Strength A</button>
+          <button className={startWorkoutKey==='B' ? "smallBtn primary" : "smallBtn"} onClick={()=>setStartWorkoutKey('B')}>💪 Strength B</button>
+          <button className={startWorkoutKey==='CORE' ? "smallBtn primary" : "smallBtn"} onClick={()=>setStartWorkoutKey('CORE')}>👙 Core</button>
+          <button className={startWorkoutKey==='PILATES' ? "smallBtn primary" : "smallBtn"} onClick={()=>setStartWorkoutKey('PILATES')}>🧘 Pilates</button>
+        </div>
+
+        <div style={{height:12}} />
         <label className="pill">
           Workout date&nbsp;
           <input className="input" style={{width:170}} type="date" value={startISO} max={todayISO} onChange={(e)=>setStartISO(e.target.value)} />
@@ -256,7 +264,12 @@ export default function Today({ ctx }:{ ctx:any }){
 
         <div style={{height:12}} />
         <div className="muted">
-          This will save <strong style={{color:'#fff'}}>Workout {startWorkoutKey}</strong> for <strong style={{color:'#fff'}}>{startISO}</strong>.
+          This will save <strong style={{color:'#fff'}}>
+            {startWorkoutKey==='A' ? 'Strength A' :
+             startWorkoutKey==='B' ? 'Strength B' :
+             startWorkoutKey==='CORE' ? 'Core' :
+             'Pilates'}
+          </strong> for <strong style={{color:'#fff'}}>{startISO}</strong>.
         </div>
       </Modal>
       {toast && (
@@ -426,6 +439,7 @@ export default function Today({ ctx }:{ ctx:any }){
             <div style={{height:10}} />
 
             <div className="row" style={{flexWrap:'wrap'}}>
+              <button className="smallBtn" onClick={()=> openStartPicker('A', todayISO)}>Log past workout</button>
               <button className="smallBtn" onClick={()=>ctx.setTab('meals')}>Open Meals + Macros</button>
               <button className="smallBtn" onClick={()=>ctx.setTab('progress')}>Open Progress</button>
             </div>
